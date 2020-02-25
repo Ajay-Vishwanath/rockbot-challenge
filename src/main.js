@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 
 import Home from './components/Home'
 import Leaderboard from './components/Leaderboard'
+import "./styles/app.css";
 
 Vue.use(VueRouter)
 
@@ -23,3 +24,4 @@ new Vue({
   components: { App },
   router
 }).$mount('#app')
+
