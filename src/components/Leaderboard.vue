@@ -2,7 +2,9 @@
   <div>
      <p>Leaderboard</p>
      <h5>Top DJs</h5>
+     {{ data.aTopUsers }}
      <h5>Top Artists</h5>
+     {{ data.aTopArtists }}
   </div>
 </template>
 
@@ -30,6 +32,9 @@ export default {
       .get('https://api.rockbot.com/v2/venue/10')
       .then(response => (this.data = response.data))
     }
+  },
+  updated(){
+    debugger
   },
   beforeDestroy() {
     clearInterval((this.timer))

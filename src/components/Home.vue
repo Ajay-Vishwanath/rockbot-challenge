@@ -1,8 +1,8 @@
 <template>
   <div>
-     <NowPlaying v-bind:nowPlaying=data.aNowPlaying />
+     <NowPlaying v-if="data !== null" v-bind:nowPlaying=data.aNowPlaying />
      <h5>Coming Up</h5>
-     <ComingUp v-bind:artistQueue=data.aQueue />
+     <ComingUp v-if="data !== null" v-bind:artistQueue=data.aQueue />
   </div>
 </template>
 
