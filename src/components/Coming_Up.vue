@@ -7,9 +7,9 @@
 <script>
 
 export default {
+  name: 'ComingUp',
   props: [
       'artistQueue',
-      ],
-  name: 'ComingUp'
+      ]
 }
 </script>

@@ -12,6 +12,7 @@ import ComingUp from './Coming_Up'
 import axios from 'axios'
 
 export default {
+    name: 'Home',
     components : {
     'NowPlaying': NowPlaying,
     'ComingUp' : ComingUp
@@ -22,7 +23,6 @@ export default {
       timer: ''
     }
   },
-  name: 'Home',
   created () {
     this.fetchData();
     //timer to make another axios call to the API every 30 seconds

@@ -7,9 +7,9 @@
 <script>
 
 export default {
+  name: 'NowPlaying',
   props: [
       'nowPlaying',
-      ],
-  name: 'NowPlaying'
+      ]
 }
 </script>

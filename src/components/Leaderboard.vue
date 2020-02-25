@@ -12,6 +12,7 @@
 import axios from 'axios'
 
 export default {
+    name: 'Leaderboard',
     components : {
   },
   data(){
@@ -20,7 +21,6 @@ export default {
       timer: ''
     }
   },
-  name: 'Leaderboard',
   created () {
     this.fetchData();
     //timer to make another axios call to the API every 30 seconds
@@ -32,9 +32,6 @@ export default {
       .get('https://api.rockbot.com/v2/venue/10')
       .then(response => (this.data = response.data))
     }
-  },
-  updated(){
-    debugger
   },
   beforeDestroy() {
     clearInterval((this.timer))
