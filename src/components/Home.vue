@@ -1,16 +1,20 @@
 <template>
   <div>
-     <NowPlaying :nowPlaying=data.aNowPlaying />
+     <NowPlaying v-bind:nowPlaying=data.aNowPlaying />
+     <h5>Coming Up</h5>
+     <ComingUp v-bind:artistQueue=data.aQueue />
   </div>
 </template>
 
 <script>
 import NowPlaying from './Now_Playing'
+import ComingUp from './Coming_Up'
 import axios from 'axios'
 
 export default {
     components : {
-    'NowPlaying': NowPlaying
+    'NowPlaying': NowPlaying,
+    'ComingUp' : ComingUp
   },
   data(){
     return{

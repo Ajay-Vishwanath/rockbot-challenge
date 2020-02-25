@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <Navbar></Navbar>
+    <TopNavbar></TopNavbar>
     <router-view></router-view>
+    <BottomNavbar></BottomNavbar>
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar'
+import TopNavbar from './components/Top_Navbar'
+import BottomNavbar from './components/Bottom_Navbar'
 
 export default {
   name: 'app',
   components: {
-    'Navbar': Navbar
+    'TopNavbar': TopNavbar,
+    'BottomNavbar' : BottomNavbar
   }
 }
 </script>
