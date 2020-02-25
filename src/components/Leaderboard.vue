@@ -1,6 +1,5 @@
 <template>
   <div>
-     <p>Leaderboard</p>
      <h5>Top DJs</h5>
      {{ data.aTopUsers }}
      <h5>Top Artists</h5>
