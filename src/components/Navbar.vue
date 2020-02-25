@@ -1,6 +1,6 @@
 <template>
-  <div>
-     <p>NAVBAR</p>
+  <div id="navbar-container">
+     <h2>Mini Rockbot</h2>
   </div>
 </template>
 

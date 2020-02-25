@@ -2,13 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 
-import Navbar from './components/Navbar'
-import Leaderboard from './components/leaderboard'
+import Home from './components/Home'
+import Leaderboard from './components/Leaderboard'
 
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/', component: Navbar },
+  { path: '/', component: Home },
   { path: '/leaderboard', component: Leaderboard}
 ];
 
