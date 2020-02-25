@@ -1,18 +1,32 @@
 <template>
   <div>
      <h5>Top DJs</h5>
-     {{ data.aTopUsers }}
+     <div class="category-index" v-if="data !== null">
+        <TopCategoryItem
+        v-for="topCategoryItem in data.aTopUsers"
+        v-bind:topCategoryItem="topCategoryItem"
+        v-bind:key="topCategoryItem.id"
+        ></TopCategoryItem>
+     </div>
      <h5>Top Artists</h5>
-     {{ data.aTopArtists }}
+     <div class="category-index" v-if="data !== null">
+        <TopCategoryItem
+        v-for="topCategoryItem in data.aTopArtists"
+        v-bind:topCategoryItem="topCategoryItem"
+        v-bind:key="topCategoryItem.id"
+      ></TopCategoryItem>
+     </div>
   </div>
 </template>
 
 <script>
+import TopCategoryItem from './Top_Category_Item'
 import axios from 'axios'
 
 export default {
     name: 'Leaderboard',
     components : {
+      TopCategoryItem
   },
   data(){
     return{
