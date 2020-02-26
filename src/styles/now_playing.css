@@ -4,5 +4,16 @@
 
 #now-playing-artwork{
     border-radius: 8px;
-    margin-right: 1em;
+    margin-right: 1.1em;
+}
+
+#now-playing-artist{
+    font-size: 1.0em;
+    font-weight: bold;
+    margin: .8em 0em 0em 0em;
+}
+
+#now-playing-title{
+    font-size: 1.1em;
+    margin: .2em 0em 0em 0em;
 }

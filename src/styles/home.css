@@ -2,6 +2,13 @@
     margin: 2em 1.5em 2em 1.5em;
 }
 
+#coming-up{
+    font-size: 1.1em;
+    font-weight: 100;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
 #coming-up-index{
     width: 95%;
     margin: 0 auto;

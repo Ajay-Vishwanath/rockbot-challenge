@@ -1,13 +1,18 @@
 #top-navbar{
     text-align: center;
     background-color: #0081ff;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 3.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #mini-rockbot{
     color: white;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 100;
+    margin: 0em 0em 0em 0em;
 }
 
 button {

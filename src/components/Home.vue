@@ -1,7 +1,7 @@
 <template>
   <div id="home-content">
      <NowPlaying v-if="data !== null" v-bind:nowPlaying=data.aNowPlaying />
-     <h5>Coming Up</h5>
+     <h5 id="coming-up">Coming Up</h5>
      <div id="coming-up-index">
        <ComingUp v-if="data !== null" v-bind:artistQueue=data.aQueue />
      </div>
