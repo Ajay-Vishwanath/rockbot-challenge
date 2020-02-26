@@ -1,6 +1,6 @@
 <template>
   <div id="now-playing-container">
-    <img v-bind:src="nowPlaying.sArtwork">
+    <img id="now-playing-artwork" v-bind:src="nowPlaying.sArtwork">
     <div>
       <p id="now-playing-artist">{{nowPlaying.sArtist}}</p>
       <p id="now-playing-title">{{nowPlaying.sSong}}</p>

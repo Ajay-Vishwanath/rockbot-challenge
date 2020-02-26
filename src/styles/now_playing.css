@@ -1,3 +1,8 @@
 #now-playing-container{
     display: flex;
 }
+
+#now-playing-artwork{
+    border-radius: 8px;
+    margin-right: 1em;
+}

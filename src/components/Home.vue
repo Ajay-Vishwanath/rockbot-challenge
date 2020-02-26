@@ -1,8 +1,10 @@
 <template>
-  <div>
+  <div id="home-content">
      <NowPlaying v-if="data !== null" v-bind:nowPlaying=data.aNowPlaying />
      <h5>Coming Up</h5>
-     <ComingUp v-if="data !== null" v-bind:artistQueue=data.aQueue />
+     <div id="coming-up-index">
+       <ComingUp v-if="data !== null" v-bind:artistQueue=data.aQueue />
+     </div>
   </div>
 </template>
 
@@ -41,3 +43,5 @@ export default {
 }
 
 </script>
+
+<style src="../styles/home.css"></style>

@@ -1,0 +1,19 @@
+#top-navbar{
+    text-align: center;
+    background-color: #0081ff;
+    border: 1px solid black;
+}
+
+#mini-rockbot{
+    color: white;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+button {
+    cursor: pointer;
+}
+button:disabled {
+    color: none;
+    cursor: auto;
+}
