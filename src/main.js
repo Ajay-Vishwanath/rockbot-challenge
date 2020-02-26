@@ -16,7 +16,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(VueRouter)
 
-// redirects to home if path not recognized
+//redirects to home if path not recognized
 const routes = [
   { path: '/', component: Home },
   { path: '/leaderboard', component: Leaderboard},

@@ -41,9 +41,6 @@ export default {
       .then(response => (this.data = response.data))
     }
   },
-  updated(){
-    debugger
-  },
   beforeDestroy() {
     clearInterval((this.timer))
   }
