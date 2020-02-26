@@ -23,6 +23,10 @@
     border-top: 1px solid black;
     height: 3.8em;
     display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 /* CSS reset for button  */

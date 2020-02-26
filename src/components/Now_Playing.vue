@@ -6,6 +6,7 @@
       <p id="now-playing-artist" v-if="nowPlaying">{{nowPlaying.sArtist}}</p>
       <p id="now-playing-title" v-if="nowPlaying">{{nowPlaying.sSong}}</p>
     </div>
+    <p v-if="!nowPlaying">No Song is Currently Playing :(</p>
   </div>
 </template>
 

@@ -41,7 +41,7 @@ export default {
       .then(response => (this.data = response.data))
     }
   },
-  mounted(){
+  updated(){
     debugger
   },
   beforeDestroy() {
