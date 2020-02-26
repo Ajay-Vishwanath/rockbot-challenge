@@ -1,10 +1,10 @@
 <template>
   <div id="now-playing-container">
-    <img id="now-playing-artwork" v-if="nowPlaying.sArtwork"
+    <img id="now-playing-artwork" v-if="nowPlaying"
     v-bind:src="nowPlaying.sArtwork">
     <div>
-      <p id="now-playing-artist" v-if="nowPlaying.sArtist">{{nowPlaying.sArtist}}</p>
-      <p id="now-playing-title" v-if="nowPlaying.sSong">{{nowPlaying.sSong}}</p>
+      <p id="now-playing-artist" v-if="nowPlaying">{{nowPlaying.sArtist}}</p>
+      <p id="now-playing-title" v-if="nowPlaying">{{nowPlaying.sSong}}</p>
     </div>
   </div>
 </template>
@@ -15,7 +15,10 @@ export default {
   name: 'NowPlaying',
   props: [
       'nowPlaying',
-      ]
+      ],
+  mounted(){
+    debugger 
+  }
 }
 </script>
 

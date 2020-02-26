@@ -10,7 +10,8 @@ Vue.use(VueRouter)
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/leaderboard', component: Leaderboard}
+  { path: '/leaderboard', component: Leaderboard},
+  { path :'*', redirect: '/'}
 ];
 
 const router = new VueRouter({

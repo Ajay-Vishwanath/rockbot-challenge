@@ -1,7 +1,7 @@
 <template>
   <div id="leaderboard-content">
      <h5 class="leaderboard-section-title">Top DJs</h5>
-     <div class="category-index" v-if="data !== null">
+     <div class="category-index-1" v-if="data !== null">
         <TopCategoryItem
         v-for="topCategoryItem in data.aTopUsers"
         v-bind:topCategoryItem="topCategoryItem"
@@ -9,7 +9,7 @@
         ></TopCategoryItem>
      </div>
      <h5 class="leaderboard-section-title">Top Artists</h5>
-     <div class="category-index" v-if="data !== null">
+     <div class="category-index-2" v-if="data !== null">
         <TopCategoryItem
         v-for="topCategoryItem in data.aTopArtists"
         v-bind:topCategoryItem="topCategoryItem"

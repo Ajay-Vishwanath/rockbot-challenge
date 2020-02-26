@@ -2,12 +2,21 @@
     margin: 3em 2.2em 3em 2.2em;
 }
 
-.category-index{
+.category-index-1{
     margin-top: 1.5em;
     margin-left: .5em;
 }
 
-.category-index img:not(:last-child){
+.category-index-1 img:not(:last-child){
+    margin-right: 1.4em;
+}
+
+.category-index-2{
+    margin-top: 1.5em;
+    margin-left: .5em;
+}
+
+.category-index-2 img:not(:last-child){
     margin-right: 1.4em;
 }
 
