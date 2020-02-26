@@ -10,6 +10,7 @@ import Home from './components/Home'
 import Leaderboard from './components/Leaderboard'
 import "./styles/app.css";
 
+//adding font awesome loading icon
 library.add(faSpinner)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

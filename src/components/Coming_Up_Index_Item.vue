@@ -34,6 +34,8 @@ export default {
     }
   },
   mounted(){
+    //if there are more downvotes than upvotes, then we want to change the
+    //class of the upvotes text to display red
     if (this.comingUpItem.iLikes - this.comingUpItem.iDislikes < 0){
       this.positive = false;
     }

@@ -25,6 +25,8 @@ export default {
     navigate(path){
       this.$router.push(path)
     },
+    //method to see if navigation button should be disabled
+    //i.e if we're already on that page.
     isDisabled(path){
       return path === this.$route.path
     }
