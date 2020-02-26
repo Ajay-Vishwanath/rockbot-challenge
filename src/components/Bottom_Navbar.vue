@@ -1,9 +1,12 @@
 <template>
   <div id="bottom-navbar">
-     <button v-on:click= "navigate('/')"
+     <button id="now-playing-button"
+     v-on:click= "navigate('/')"
       :disabled="isDisabled('/')">
      Now Playing</button>
-     <button v-on:click= "navigate('/leaderboard')"
+
+     <button id="leaderboard-button"
+     v-on:click= "navigate('/leaderboard')"
      :disabled="isDisabled('/leaderboard')">
      Leaderboard</button>
   </div>
@@ -24,7 +27,15 @@ export default {
     },
     isDisabled(path){
       return path === this.$route.path
-    }
+    },
+    // activePath(){
+    //   let inactivePage
+    //   if (currentPage === "/"){
+    //     inactivePage = "leaderboard-button"
+    //   } else {
+    //     inactivePage = "now-playing-button"
+    //   }
+    // }
   }
 }
 </script>

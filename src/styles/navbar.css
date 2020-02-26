@@ -1,3 +1,5 @@
+/* top navbar styling */
+
 #top-navbar{
     text-align: center;
     background-color: #0081ff;
@@ -15,10 +17,56 @@
     margin: 0em 0em 0em 0em;
 }
 
-button {
-    cursor: pointer;
+/* bottom navbar styling */
+
+#bottom-navbar{
+    border-top: 1px solid black;
+    height: 3.8em;
+    display: flex;
 }
-button:disabled {
-    color: none;
+
+/* CSS reset for button  */
+
+Button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+
+    background: transparent;
+
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+button:focus {outline:0;}
+
+#bottom-navbar button {
+    cursor: pointer;
+    width: 50%;
+    background-color: none;
+    padding: none;
+    color: #c0c0c0;
+    font-weight: bold;
+}
+
+#bottom-navbar button:disabled {
+    color: #00a2f0;
     cursor: auto;
+}
+
+#now-playing-button{
+    border-right: 1px solid black;
 }

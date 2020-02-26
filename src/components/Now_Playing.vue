@@ -1,9 +1,10 @@
 <template>
   <div id="now-playing-container">
-    <img id="now-playing-artwork" v-bind:src="nowPlaying.sArtwork">
+    <img id="now-playing-artwork" v-if="nowPlaying.sArtwork"
+    v-bind:src="nowPlaying.sArtwork">
     <div>
-      <p id="now-playing-artist">{{nowPlaying.sArtist}}</p>
-      <p id="now-playing-title">{{nowPlaying.sSong}}</p>
+      <p id="now-playing-artist" v-if="nowPlaying.sArtist">{{nowPlaying.sArtist}}</p>
+      <p id="now-playing-title" v-if="nowPlaying.sSong">{{nowPlaying.sSong}}</p>
     </div>
   </div>
 </template>
