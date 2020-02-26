@@ -1,6 +1,6 @@
 <template>
-  <div>
-     <h5>Top DJs</h5>
+  <div id="leaderboard-content">
+     <h5 class="leaderboard-section-title">Top DJs</h5>
      <div class="category-index" v-if="data !== null">
         <TopCategoryItem
         v-for="topCategoryItem in data.aTopUsers"
@@ -8,7 +8,7 @@
         v-bind:key="topCategoryItem.id"
         ></TopCategoryItem>
      </div>
-     <h5>Top Artists</h5>
+     <h5 class="leaderboard-section-title">Top Artists</h5>
      <div class="category-index" v-if="data !== null">
         <TopCategoryItem
         v-for="topCategoryItem in data.aTopArtists"
@@ -52,3 +52,5 @@ export default {
 }
 
 </script>
+
+<style src="../styles/leaderboard.css"></style>

@@ -1,5 +1,5 @@
 <template>
-  <img id="cateogory-image" v-bind:src="getArtwork(topCategoryItem)" v-bind:alt="topCategoryItem">
+    <img id="category-image" v-bind:src="getArtwork(topCategoryItem)" v-bind:alt="topCategoryItem">
 </template>
 
 <script>
