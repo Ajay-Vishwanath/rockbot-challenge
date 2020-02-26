@@ -1,9 +1,13 @@
 <template>
   <div id="home-content">
-     <NowPlaying v-if="data !== null" v-bind:nowPlaying=data.aNowPlaying />
+      <div id="now-playing-section-container">
+        <NowPlaying v-if="data !== null" v-bind:nowPlaying="data.aNowPlaying"/>
+        <p id="spinner" v-if="!data"><font-awesome-icon icon="spinner" /></p>
+     </div>
      <h5 id="coming-up">Coming Up</h5>
      <div id="coming-up-index">
-       <ComingUp v-if="data !== null" v-bind:artistQueue=data.aQueue />
+       <ComingUp v-if="data !== null" v-bind:artistQueue="data.aQueue"/>
+       <p id="spinner" v-if="!data"><font-awesome-icon icon="spinner" /></p>
      </div>
   </div>
 </template>
@@ -36,6 +40,9 @@ export default {
       .get('https://api.rockbot.com/v2/venue/10')
       .then(response => (this.data = response.data))
     }
+  },
+  mounted(){
+    debugger
   },
   beforeDestroy() {
     clearInterval((this.timer))

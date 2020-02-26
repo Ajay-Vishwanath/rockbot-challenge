@@ -8,6 +8,7 @@
         v-bind:key="topCategoryItem.id"
         ></TopCategoryItem>
      </div>
+     <p id="spinner" v-if="!data"><font-awesome-icon icon="spinner" /></p>
      <h5 class="leaderboard-section-title">Top Artists</h5>
      <div class="category-index-2" v-if="data !== null">
         <TopCategoryItem
@@ -16,6 +17,7 @@
         v-bind:key="topCategoryItem.id"
       ></TopCategoryItem>
      </div>
+     <p id="spinner" v-if="!data"><font-awesome-icon icon="spinner" /></p>
   </div>
 </template>
 

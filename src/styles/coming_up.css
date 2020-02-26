@@ -4,6 +4,10 @@
     margin-top: 1.7em;
 }
 
+#coming-up-song-info{
+    text-overflow: ellipsis;
+}
+
 #coming-up-artist{
     font-size: 1em;
     font-weight: bold;
@@ -16,6 +20,7 @@
 }
 
 #upvotes-container{
+    min-width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;

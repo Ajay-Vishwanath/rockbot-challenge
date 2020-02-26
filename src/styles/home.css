@@ -2,6 +2,15 @@
     margin: 2em 1.5em 2em 1.5em;
 }
 
+#now-playing-section-container{
+    width: 100%;
+}
+
+#spinner{
+    font-size: 1.5em;
+    text-align: center;
+}
+
 #coming-up{
     font-size: 1.1em;
     font-weight: 100;

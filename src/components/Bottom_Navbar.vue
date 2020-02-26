@@ -27,15 +27,7 @@ export default {
     },
     isDisabled(path){
       return path === this.$route.path
-    },
-    // activePath(){
-    //   let inactivePage
-    //   if (currentPage === "/"){
-    //     inactivePage = "leaderboard-button"
-    //   } else {
-    //     inactivePage = "now-playing-button"
-    //   }
-    // }
+    }
   }
 }
 </script>
