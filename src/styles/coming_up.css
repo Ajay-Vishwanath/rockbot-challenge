@@ -14,3 +14,20 @@
     font-size: 1em;
     margin: 0em;
 }
+
+#upvotes-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#coming-up-song-upvotes{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: red;
+    margin: 0;
+}
+
+#coming-up-song-upvotes.positive {
+    color: #40b65c;
+}

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="artistQueue !== null">
      <ComingUpItem
        v-for="comingUpItem in artistQueue"
        v-bind:comingUpItem="comingUpItem"
