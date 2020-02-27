@@ -1,28 +1,28 @@
 #leaderboard-content{
-    margin: 3em 2.2em 3em 2.2em;
+    margin: 8vh 5vw 3vh 5vw;
 }
 
 .category-index-1{
-    margin-top: 1.5em;
+    margin-top: 4vh;
     margin-left: .5em;
-    margin-bottom: 3.5em;
+    margin-bottom: 10vh;
 }
 
 .category-index-1 img:not(:last-child){
-    margin-right: 1.4em;
+    margin-right: 7vw;
 }
 
 .category-index-2{
-    margin-top: 1.5em;
+    margin-top: 4vh;
     margin-left: .5em;
 }
 
 .category-index-2 img:not(:last-child){
-    margin-right: 1.4em;
+    margin-right: 7vw;
 }
 
 .leaderboard-section-title{
-    font-size: 1.1em;
+    font-size: 2.5vh;
     font-weight: 100;
     text-decoration: underline;
     margin-bottom: 0;
@@ -31,4 +31,23 @@
 #spinner{
     font-size: 1.5em;
     text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #leaderboard-content{
+        margin: 3vh 20vw 3vh 20vw;
+    }
+
+    .category-index-1{
+        display: flex;
+        justify-content: center;
+        margin-top: 8vh;
+    }
+
+    .category-index-2{
+        display: flex;
+        justify-content: center;
+        margin-top: 8vh;
+    }
 }
